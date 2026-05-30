@@ -284,63 +284,87 @@ columns:1;
 }
 
 #passwordOverlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.85);
-backdrop-filter:blur(15px);
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:99999;
+    position:fixed !important;
+    inset:0 !important;
+
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+
+    background:rgba(0,0,0,.92) !important;
+    backdrop-filter:blur(20px) !important;
+
+    z-index:999999 !important;
 }
 
 .password-box{
-width:400px;
-max-width:90%;
-padding:40px;
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(20px);
-border-radius:25px;
-text-align:center;
+
+    width:420px !important;
+    max-width:90% !important;
+
+    padding:40px !important;
+
+    border-radius:24px !important;
+
+    background:rgba(255,255,255,.08) !important;
+
+    border:1px solid rgba(255,255,255,.15) !important;
+
+    backdrop-filter:blur(30px) !important;
+
+    text-align:center !important;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.5) !important;
 }
 
 .password-box h2{
-margin-bottom:15px;
+    margin-bottom:15px !important;
+    font-size:2rem !important;
 }
 
 .password-box p{
-color:#bbb;
-margin-bottom:20px;
+    color:#cfcfcf !important;
 }
 
 .password-box input{
-width:100%;
-padding:15px;
-border:none;
-outline:none;
-border-radius:12px;
-background:rgba(255,255,255,.08);
-color:white;
-margin-bottom:20px;
-font-size:1rem;
+
+    width:100% !important;
+
+    margin-top:20px !important;
+    margin-bottom:20px !important;
+
+    padding:16px !important;
+
+    border-radius:12px !important;
+
+    border:1px solid rgba(255,255,255,.15) !important;
+
+    background:rgba(255,255,255,.05) !important;
+
+    color:white !important;
 }
 
 .password-box button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:12px;
-background:white;
-color:black;
-font-weight:700;
-cursor:pointer;
+
+    width:100% !important;
+
+    padding:16px !important;
+
+    border:none !important;
+
+    border-radius:12px !important;
+
+    cursor:pointer !important;
+
+    font-weight:700 !important;
+
+    background:white !important;
+
+    color:black !important;
 }
 
 #error{
-margin-top:15px;
-color:#ef4444;
+    color:#ff6b6b !important;
+    margin-top:15px !important;
 }
