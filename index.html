@@ -17,7 +17,27 @@
 const SITE_PASSWORD = "faranH2026";
 
 function checkPassword() {
-    alert("Button works!");
+
+    const entered =
+    document.getElementById("passwordInput").value;
+
+    console.log("Entered:", entered);
+    console.log("Expected:", SITE_PASSWORD);
+
+    if (entered === SITE_PASSWORD) {
+
+        alert("Correct Password");
+
+        document.getElementById(
+            "passwordOverlay"
+        ).style.display = "none";
+
+    } else {
+
+        alert("Wrong Password");
+
+    }
+
 }
 
 </script>
