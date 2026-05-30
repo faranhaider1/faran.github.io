@@ -281,6 +281,8 @@ font-size:2.5rem;
 .gallery{
 columns:1;
 }
+}
+
 #passwordOverlay{
 position:fixed;
 top:0;
@@ -341,6 +343,4 @@ cursor:pointer;
 #error{
 margin-top:15px;
 color:#ef4444;
-}
-  
 }
