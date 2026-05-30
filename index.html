@@ -13,48 +13,32 @@
 
 <script>
 
+<script>
+
 const SITE_PASSWORD = "faranH2026";
 
-function checkPassword(){
+function checkPassword() {
 
-const entered =
-document.getElementById("passwordInput").value;
+    const entered =
+    document.getElementById("passwordInput").value;
 
-if(entered === SITE_PASSWORD){
+    if (entered === SITE_PASSWORD) {
 
-document.getElementById(
-"passwordOverlay"
-).style.display = "none";
+        document.getElementById(
+            "passwordOverlay"
+        ).style.display = "none";
 
-localStorage.setItem(
-"websiteAccess",
-"granted"
-);
+    } else {
 
-}else{
+        document.getElementById(
+            "error"
+        ).innerText = "Incorrect password";
 
-document.getElementById(
-"error"
-).innerText = "Incorrect password";
+    }
 
 }
 
-}
-
-window.onload = () => {
-
-if(
-localStorage.getItem("websiteAccess")
-=== "granted"
-){
-
-document.getElementById(
-"passwordOverlay"
-).style.display = "none";
-
-}
-
-}
+</script>
 
 </script>
   
