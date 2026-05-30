@@ -11,8 +11,78 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
+<script>
+
+const SITE_PASSWORD = "faranH2026";
+
+function checkPassword(){
+
+const entered =
+document.getElementById("passwordInput").value;
+
+if(entered === SITE_PASSWORD){
+
+document.getElementById(
+"passwordOverlay"
+).style.display = "none";
+
+localStorage.setItem(
+"websiteAccess",
+"granted"
+);
+
+}else{
+
+document.getElementById(
+"error"
+).innerText = "Incorrect password";
+
+}
+
+}
+
+window.onload = () => {
+
+if(
+localStorage.getItem("websiteAccess")
+=== "granted"
+){
+
+document.getElementById(
+"passwordOverlay"
+).style.display = "none";
+
+}
+
+}
+
+</script>
+  
 <body>
 
+<div id="passwordOverlay">
+
+<div class="password-box">
+
+<h2>Private Access</h2>
+
+<p>Enter password to continue</p>
+
+<input
+type="password"
+id="passwordInput"
+placeholder="Password">
+
+<button onclick="checkPassword()">
+Enter
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+  
 <div class="bg">
 <div class="blob blob1"></div>
 <div class="blob blob2"></div>
