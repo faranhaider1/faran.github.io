@@ -281,5 +281,66 @@ font-size:2.5rem;
 .gallery{
 columns:1;
 }
+#passwordOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(15px);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
 
+.password-box{
+width:400px;
+max-width:90%;
+padding:40px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(20px);
+border-radius:25px;
+text-align:center;
+}
+
+.password-box h2{
+margin-bottom:15px;
+}
+
+.password-box p{
+color:#bbb;
+margin-bottom:20px;
+}
+
+.password-box input{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:12px;
+background:rgba(255,255,255,.08);
+color:white;
+margin-bottom:20px;
+font-size:1rem;
+}
+
+.password-box button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:white;
+color:black;
+font-weight:700;
+cursor:pointer;
+}
+
+#error{
+margin-top:15px;
+color:#ef4444;
+}
+  
 }
